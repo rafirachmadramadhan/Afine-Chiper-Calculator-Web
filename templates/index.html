@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kriptooo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper-bundle.min.css')}}"> -->
+</head>
+
+
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand gagalin text-light" href="#page-top">KriptoProject</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item"><a class="nav-link gagalin text-light" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link gagalin text-light" href="#toUse">How to Use</a></li>
+          <li class="nav-item"><a class="nav-link gagalin text-light" href="#tim">Team</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+
+  <header class="masthead">
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+        <div class="d-flex justify-content-center">
+            <div class="text-center">
+                <h1 class="mx-auto my-0 text-uppercase gagalin begold">Affine cipher</h1>
+                <h2 class="text-white-50 mx-auto mt-2 mb-5">Encode and decode</h2>
+                <a href="#siap">
+                  <button class="btn begold gagalin">Get Started</button>
+                </a>
+            </div>
+        </div>
+    </div>
+  </header>
+
+  <section class="aboutUs" id="about">
+    <div class="container-xxl py-1">
+        <div class="container">
+            <div class="row g-5 align-items-center reveal">
+                <h1 class="gagalin text-light text-center" id="service">About</h1>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6 text-start">
+                            <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="{{ url_for('static', filename='img/0.jpg') }}">
+                        </div>
+                        <div class="col-6 text-start">
+                            <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="{{ url_for('static', filename='img/1.png') }}" >
+                        </div>
+                        <div class="col-6 text-end">
+                            <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.5s" src="{{ url_for('static', filename='img/2.png') }}">
+                        </div>
+                        <div class="col-6 text-end">
+                            <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="{{ url_for('static', filename='img/3.jpg') }}">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4 gagalin">Welcome to KriptoProject.</h2>
+                    <h3 class="mt-0 text-start justify-content-center">
+                      This is a web for decryption/encryption with Affine cipher, an encryption function with addition and multiplication that encodes a letter into another letter with the value <br>(mP + b) mod 26 where m and b are the keys. <br>likewise a decryption function with <br>(m^-1)(C - b) mod 26.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="toUse" id="toUse">
+    <div class="container service pt-5">
+        <div class="container text-center reveal">
+            <h1 class="gagalin" id="service">How to use website</h1>
+            <p class="text-uppercase ">your comfy is our priority</p>
+            <div class="row pt-4 use">
+                <div class="col-md-4 pb-5">
+                    <span class="bulet"><img src="{{ url_for('static', filename='img/8.png') }}" class="bulet" alt=""
+                            width="100%"></span>
+                    <h2 class="mt-3 gagalin ">Choose</h2>
+                    <p class="">choose whether you want decrypt or encrypt</p>
+                </div>
+    
+                <div class="col-md-4 pb-5">
+                    <span class="bulet"><img src="{{ url_for('static', filename='img/7.png') }}" class="bulet"
+                            alt=""></span>
+                    <h2 class="mt-3 gagalin ">Write</h2>
+                    <p class="">write something you want it to be decrypted or encrypted</p>
+                </div>
+    
+                <div class="col-md-4 pb-5">
+                    <span class="bulet"><img src="{{ url_for('static', filename='img/6.png') }}" class="bulet"
+                            alt=""></span>
+                    <h2 class="mt-3 gagalin ">Decrypt/Encrypt</h2>
+                    <p class="">Here We Go!!!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="mainDE" id="siap">
+    <div class="container text-center reveal">
+      <div class="pb-5">
+        <h1 class="gagalin text-light" id="service">Start Decrypt/Encrypt Now</h1>
+        <!-- <p class="text-uppercase text-light"></p> -->
+      </div>
+      <div class="card py-2 shadow-lg bg-body rounded">
+        <ul class="nav nav-tabs justify-content-center reveal" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active gagalin" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+              type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Decrypt</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link gagalin" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+              type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Encrypt</button>
+          </li>
+        </ul>
+        <div class="tab-content reveal bezoom" id="myTabContent">
+          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">
+            <div class="mb-3 mx-auto d-grid gap-2">
+              <label for="exampleFormControlTextarea1" class="form-label gagalin"><br>chiper TEXT</label>
+              <textarea class="form-control shadow bg-body rounded" placeholder="write chiper text here" id="Decrypt" rows="3"></textarea>
+              <div class="row row-cols-2">
+                <div class="col">
+                  <select class="form-select shadow bg-body rounded" aria-label="Default select" id="keyDecrypt1">
+                    <option selected>select key 1</option>
+                    {%for i in [1,3,5,7,9,11,15,17,19,21,23,25]%}
+                    <option value="{{i}}">{{i}}</option>
+                    {%endfor%}
+                  </select>
+                </div>
+                <div class="col">
+                  <select class="form-select shadow bg-body rounded" aria-label="Default select" id="keyDecrypt2">
+                    <option selected>select key 2</option>
+                    {%for i in range(26)%}
+                    <option value="{{i}}">{{i}}</option>
+                    {%endfor%}
+                  </select>
+                </div>
+              </div>
+              <button onclick="cetak()" type="button" class="btn btn-outline-dark shadow rounded">Decrypt</button>
+              <div class="card h-100 shadow-lg bg-body rounded">
+                <div class="card-header gagalin">
+                  result plain TEXT
+                </div>
+                <div class="pd-4 minH">
+                  <p class="text-start" id="hasiPlain"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="mb-3 mx-auto d-grid gap-2">
+              <label for="exampleFormControlTextarea1 pt-4" class="form-label gagalin"><br>plain TEXT</label>
+              <textarea class="form-control shadow bg-body rounded" placeholder="write plain text here" id="Encrypt" rows="3"></textarea>
+              <div class="row row-cols-2">
+                <div class="col">
+                  <select class="form-select shadow bg-body rounded" aria-label="Default select" id="keyEncrypt1">
+                    <option selected>select key 1</option>
+                    {%for i in [1,3,5,7,9,11,15,17,19,21,23,25]%}
+                    <option value="{{i}}">{{i}}</option>
+                    {%endfor%}
+                  </select>
+                </div>
+                <div class="col">
+                  <select class="form-select shadow bg-body rounded" aria-label="Default select" id="keyEncrypt2">
+                    <option selected>select key 2</option>
+                    {%for i in range(26)%}
+                    <option value="{{i}}">{{i}}</option>
+                    {%endfor%}
+                  </select>
+                </div>
+              </div>
+              <button onclick="cetak2()" type="button" class="btn btn-outline-dark shadow rounded">Encrypt</button>
+              <div class="card h-100 shadow-lg bg-body rounded">
+                <div class="card-header gagalin">
+                  result chiper TEXT
+                </div>
+                <div class="pd-4 minH">
+                  <p class="text-start" id="hasilChipher"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tem" id="tim">
+    <div class="container">
+      <header class="section-header text-center reveal">
+        <h1 class="gagalin text-light">MEET OUR TEAM</h1>
+        <p class="text-uppercase text-light">kripto project team personil</p>
+      </header>
+
+      <div class="row tim g-4">
+        <div class="col reveal">
+          <div class="team-item h-100">
+            <div class="mb-30 position-relative d-flex align-items-center">
+              <span class="socials d-inline-block">
+                <a href="https://www.linkedin.com/in/rafi-rachmad-ramadhan-865a95256/" class="fa-brands fa-linkedin begold"></a>
+                <a href="https://www.instagram.com/rafirachmad/" class="fa-brands fa-instagram begold"></a>
+                <a href="rafi.20023@mhs.unesa.ac.id" class="fa-solid fa-envelope begold"></a>
+                <a href="https://github.com/rafirachmadramadhan" class="fa-brands fa-github begold"></a>
+              </span>
+              <span class="img-holder d-inline-block">
+                <div>
+                  <img src="static\img\man.png" alt="Team">
+                </div>
+
+              </span>
+            </div>
+            <div class="team-content">
+              <h5 class="text-uppercase mb-0 gagalin">Rafi Rachmad Ramadhan</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col reveal">
+          <div class="team-item h-100">
+            <div class="mb-30 position-relative d-flex align-items-center">
+              <span class="socials d-inline-block">
+                <a href="https://cv.unesa.ac.id/detail/239f2c18-e1db-4010-8a1a-1d6f91331cdc" class="fa fa-male begold"></a>
+                <a class="fa-brands fa-instagram begold" href="https://www.instagram.com/hmjmatematikaunesa/?hl=id"></a>
+                <a href="radensulaiman@unesa.ac.id" class="fa-solid fa-envelope begold"></a>
+                <a href="https://cv.unesa.ac.id/detail/239f2c18-e1db-4010-8a1a-1d6f91331cdc" class="fa fa-font-awesome begold" aria-hidden="true"></a>
+              </span>
+              <span class="img-holder d-inline-block">
+                <div>
+                  <img src="static\img\man0.png" alt="Team">
+                </div>
+
+              </span>
+            </div>
+            <div class="team-content">
+              <h5 class="text-uppercase mb-0 gagalin">Dr. Raden Sulaiman, M. Si</h5>
+              <p>Dosen Pengampu</p>
+            </div>
+          </div>
+        </div>
+        <div class="col reveal">
+          <div class="team-item h-100">
+            <div class="mb-30 position-relative d-flex align-items-center">
+              <span class="socials d-inline-block">
+                <a class="fa-brands fa-linkedin begold" href="https://www.linkedin.com/in/alfaruqy31"></a>
+                <a class="fa-brands fa-instagram begold" href="https://www.instagram.com/faruqqy_/?hl=id"></a>
+                <a class="fa-solid fa-envelope begold" href="al.faruqqy@gmail.com"></a>
+                <a class="fa-brands fa-github begold" href="http://design-qy.rf.gd/"></a>
+              </span>
+              <span class="img-holder d-inline-block">
+                <div>
+                  <img src="static\img\man2.png" alt="Team">
+                </div>
+              </span>
+            </div>
+            <div class="team-content h-100">
+              <h5 class="text-uppercase mb-0 gagalin">Abu Hanifah AlFaruqy</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-top text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h4 class="navbar-brand gagalin">KriptoProject<span class="dot">.</span></h4>
+                    <p>this is a website dedicated to final cryptographic projects</p>
+                    <div class="col-auto social-icons">
+                        <a class="btn begold btn-outline-light rounded-circle me-2"
+                            href="" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom text-center">
+        <p class="mb-0 gagalin">Kripto Project Team 2022</p>
+    </div>
+  </footer>
+
+  <script type='text/javascript' src="{{ url_for('static', filename='js/scripts.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/reveal.js') }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+  <script type='text/javascript' src="{{ url_for('static', filename='js/script.js')}}"></script>
+  <script type="text/javascript">
+    function zoom(persen) {
+      document.body.style.zoom = persen
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+
+body {
+    background: #eee;
+    width: 100%;
+    height:1000px;
+    letter-spacing:1.2px;
+    text-decoration: none;
+}
+
+.navbar {
+  background-color: rgba(59, 0, 108, 0.823);
+}
+
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  /* min-height: 45rem; */
+  padding: 15rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../img/23757220_221_ug9ses1dagfpbi0xlvdoaxrl.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead h1, .masthead .h1 {
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.masthead h2, .masthead .h2 {
+  max-width: 20rem;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .masthead h1, .masthead .h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+    padding: 0;
+  }
+  .masthead h1, .masthead .h1 {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.8rem;
+  }
+  .masthead h2, .masthead .h2 {
+    max-width: 30rem;
+    font-size: 1.25rem;
+  }
+}
+
+@font-face {
+  font-family: gagalin;
+  src: url(font/Gagalin-Regular.otf);
+}
+
+h1 {
+  font-family: gagalin;
+}
+
+.indexTitel {
+  font-weight: 700;
+}
+
+
+.gagalin{
+  font-family: gagalin!important;
+}
+
+*{
+    font-size: 15px;
+    text-decoration: none;
+    padding: auto 100px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
+/* .nav-link a:hover{
+  color: #F49D1A;
+} */
+
+.pagination{
+    align-items: center!important;
+}
+
+.card {
+    text-decoration: none;
+    border: transparent;
+    /* padding: 10px; */
+}
+
+.begold {
+    background-color: rgba(59, 0, 108, 0.823)!important;
+    color: rgba(255, 255, 255, 0.823)!important;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.begold:hover {
+  background-color: #222!important;
+  color: #fff!important;
+}
+
+.beBlack {
+  background-color: #222!important;
+  color: mistyrose!important;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.beBlack:hover {
+  background-color: mistyrose!important;
+  color: #222!important;
+}
+
+.itBlack {
+  background-color: #222!important;
+  color: mistyrose;
+}
+
+.itGold{
+  background-color: mistyrose!important;
+}
+
+.golded {
+  background-color: mistyrose!important;
+}
+
+.bezoom{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.minH{
+  min-height: 100px;
+  padding: 1%;
+}
+/* .golded:hover {
+  color: #fff!important;
+} */
+
+.seller-image {
+    border-radius: 50%;
+    width: 20px;
+    padding: 0 2px;
+}
+
+p.text{
+    font-size: 15px;
+    color: #222;
+    text-transform: capitalize;
+}
+
+.seller-image-index{
+    width: 30px;
+}
+
+
+.container a {
+    font-size: 30px;
+}
+
+a.page-link{
+    font-size: 10px;
+}
+
+.nav-item a {
+    font-size: 20px;
+}
+
+.bulet {
+    display: inline-block;
+    border-radius: 35% 35% 0 0;
+    width: 68%;
+    margin: auto;
+    height: 200px;
+    background-color: transparent;
+}
+
+.banner {
+    background-size: cover;
+    padding: 20% 0;
+}
+
+.bottom-left {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.container a {
+    font-size: 30px;
+}
+
+.nav-item a {
+    font-size: 20px;
+}
+
+
+
+.banner {
+    background-size: cover;
+    padding: 20% 0;
+}
+
+.bottom-left {
+    /* position: absolute; */
+    top: 30%;
+    left: 10%;
+    font-family: 'Bebas Neue', cursive;
+    text-align: left;
+    color: #404039;
+}
+
+.about {
+    background-color: #404039;
+    color: #fff;
+    text-align: justify;
+}
+
+/* ===aboutUs=== */
+
+.aboutUs {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background: linear-gradient(0deg, rgba(34, 34, 34, 0.9), rgba(37, 37, 37, 0.9)), url(../img/3817367_10819.jpg), #222;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /* background-color: #222; */
+  color: #F5F5DC;
+}
+
+
+/* ===howtouse=== */
+
+.toUse{
+    background-color: #3b006cd2;
+    width: 100%;
+    color:#fff;
+}
+
+.mainDE{
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background: linear-gradient(0deg, rgba(34, 34, 34, 0.9), rgba(37, 37, 37, 0.9)), url(../img/12686653_SL-103020-37400-30.jpg), #222;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /* background-color: #222; */
+  /* color: #F5F5DC; */
+}
+/* ===Team=== */
+  
+.tem{
+  background-color: rgba(59, 0, 108, 0.823);
+  color: #222;
+  padding: 50px 0;
+}
+
+.tem .section-header {
+  padding-bottom: 30px;
+}
+
+.team-item {
+  padding: 35px;
+  padding-right: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.team-item:after, .team-item:before {
+  content: "";
+  position: absolute;
+  -webkit-box-shadow: 0 5px 30px 0 rgba(39, 39, 39, 0.5);
+          box-shadow: 0 5px 30px 0 rgba(39, 39, 39, 0.5);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.team-item:before {
+  height: 100%;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  right: 30px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.team-item:after {
+  height: 6px;
+  width: calc(100% - 30px);
+  background-color: #222;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.team-item:hover:after {
+  height: 100%;
+}
+
+.team-item .img-holder {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-shadow: 0 0 20px 0 rgba(51, 51, 51, 0.5);
+          box-shadow: 0 0 20px 0 rgba(51, 51, 51, 0.5);
+  border-radius: 10px;
+  width: calc(100% - 70px);
+  margin-left: 70px;
+  overflow: hidden;
+}
+
+.team-item .img-holder img {
+  border-radius: 10px;
+  width: 100%;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.team-item:hover .img-holder img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.team-item .socials {
+  position: absolute;
+}
+
+.team-item .socials a:hover {
+  color: rgba(59, 0, 108, 0.823);
+}
+
+.team-item .socials a {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+}
+
+.team-item .socials a:last-of-type {
+  margin-bottom: 0;
+}
+
+.team-item .team-content {
+  margin-right: 70px;
+  text-align: center;
+}
+
+.team-item .team-content h5 {
+  color: #222;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.team-item .team-content p {
+  color: #222;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.team-item:hover .team-content h5, .team-item:hover .team-content p {
+  color: rgba(255, 255, 255, 0.823);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* .d-inline-block {
+    display: inline-block!important;
+} */
+
+.socials a {
+    width: 35px;
+    height: 35px;
+    background-color: #F49D1A;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 3px 2px 0 #222;
+    box-shadow: 0 3px 2px 0 #222;
+    text-align: center;
+    color: #222;
+    padding-top: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+
+footer {
+    background: linear-gradient(0deg, rgba(34, 34, 34, 0.9), rgba(37, 37, 37, 0.9)), url(../img/90448.jpg), #222;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer .footer-top {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+footer .navbar-brand {
+    color: #fff;
+}
+
+footer p {
+    color: #ADB3B9;
+}
+
+footer .social-icons a {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
